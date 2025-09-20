@@ -41,7 +41,7 @@ export default function ProductsFormModal({
             setErrors({ name: "Nama produk harus diisi", price: "Harga harus diisi", stock: "Stok harus diisi" })
             return
         };
-        if (products?.some((p) => p.name.toLowerCase() === formData.name.toLowerCase())) {
+        if (products?.some((p) => p.name.toLowerCase() === formData.name.toLowerCase()) && type === "add") {
             setErrors({ name: "Nama produk sudah ada" })
             return
         }

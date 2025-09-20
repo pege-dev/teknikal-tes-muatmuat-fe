@@ -85,7 +85,7 @@ export default async function FetchingPage() {
                     {effect && (
                         effect.effect_entries.map((effect: any, index: number) => (
                             <div key={index}>
-                                <p><span className="font-bold">Effect: </span>{effect.effect}</p>
+                                <p className="font-semibold">Effect: <span className="text-amber-600 font-normal">"{effect.effect}"</span></p>
                             </div>
                         ))
                     )}
